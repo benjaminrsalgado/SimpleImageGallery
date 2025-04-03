@@ -41,7 +41,36 @@ struct ContentView: View {
                 .scaledToFit()
                 .border(Color.red, width: 17)
                 .cornerRadius(220)
+            IconoView()
                     }
+        .padding()
+    }
+}
+
+import SwiftUI
+
+struct IconoView: View {
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("SF Symbols Demo")
+                .font(.largeTitle)
+                .bold()
+
+            // ⭐ Estrella rellena, color amarillo
+            Image(systemName: "star.fill")
+                .font(.system(size: 50))
+                .foregroundColor(.yellow)
+
+            // 👤 Ícono de persona circular, azul
+            Image(systemName: "person.circle")
+                .font(.system(size:40))
+                .foregroundColor(.brown)
+
+            // ❤️ Corazón relleno, rojo y con opacidad
+            Image(systemName: "heart.fill")
+                .font(.system(size: 40))
+                .foregroundColor(Color("nuevoo"))
+        }
         .padding()
     }
 }
