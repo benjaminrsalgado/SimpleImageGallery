@@ -32,7 +32,10 @@ struct ContentView: View {
                 .resizable()
                 .scaledToFit()
                 .opacity(0.5)
-                .overlay(Text("OH! Hi 👋").foregroundColor(.green))
+                .overlay(
+                    RoundedRectangle(cornerRadius: 90)
+                        .stroke(Color.green, lineWidth: 44)
+                )
           Image("colors")
                 .resizable()
                 .scaledToFit()
