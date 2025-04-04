@@ -60,16 +60,18 @@ struct IconoView: View {
             Image(systemName: "star.fill")
                 .font(.system(size: 50))
                 .foregroundColor(.yellow)
-
+                .background(Color.brown)
             // 👤 Ícono de persona circular, azul
             Image(systemName: "person.circle")
                 .font(.system(size:40))
-                .foregroundColor(.brown)
-
+                .foregroundColor(.black)
+                .background(Circle().fill(Color.blue))
             // ❤️ Corazón relleno, rojo y con opacidad
             Image(systemName: "heart.fill")
-                .font(.system(size: 40))
+                .font(.system(size: 50))
                 .foregroundColor(Color("nuevoo"))
+                .background(.red)
+                .clipShape(Ellipse())
         }
         .padding()
     }
